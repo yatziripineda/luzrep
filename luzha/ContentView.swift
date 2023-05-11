@@ -5,84 +5,126 @@
 //  Created by CEDAM05 on 11/05/23.
 //
 
+
+
 import SwiftUI
-import CoreData
+import FirebaseAuth
+import SwiftOpenAI
+
+class AppViewModel: ObservableObject{
+    let auth = Auth.auth()
+    
+    @Published var signedIn = false
+    
+    var isSignedIn: Bool{
+        return auth.currentUser != nil
+    }
+    
+    func signIn (email: String, password: String){
+        auth.signIn(withEmail: email, password: password){
+            [weak self] result, error in
+            guard result != nil, error == nil else{
+                return
+            }
+            DispatchQueue.main.async{
+                //Success
+                self?.signedIn = true
+            }
+        }
+    }
+    
+    func signUp (email: String, password: String){
+        auth.createUser(withEmail: email, password: password){
+            [weak self] result, error in
+            guard result != nil, error == nil else
+            {
+                return
+            }
+            DispatchQueue.main.async{
+                //Success
+                self?.signedIn = true
+            }
+        }
+    }
+    func signOut(){
+        try? auth.signOut()
+        self.signedIn = false
+    }
+}//fin clase
+
+
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    @EnvironmentObject var viewModel: AppViewModel
+    @State var offsetY = 0.0
+    let gradient = Gradient(colors: [
+        Color(red: 40/255.0, green: 13/255.0, blue: 88/255.0),
+        .black
+    ])
+    
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+        NavigationStack {
+            ZStack {
+                RadialGradient(
+                    gradient: gradient,
+                    center: .center,
+                    startRadius: 0,
+                    endRadius: 360
+                )
+                .ignoresSafeArea()
+                
+                ScrollView {
+                    VStack(spacing: 0) {
+                        //Image("fondomuestra2")
+                            //.resizable()
+                       // Image("fondomuestra2")
+                           // .resizable()
                     }
+                    .scaledToFill()
+                    .frame(width: 800, height: 500)
+                    .offset(y: offsetY)
+                    .mask(
+                        
+                        VStack {
+                            Spacer()
+                            Text("SwiftBeta")
+                                .font(.system(size: 65, weight: .bold, design:
+                                        .monospaced))
+                            Spacer()
+                        }
+                    )
                 }
-                .onDelete(perform: deleteItems)
+                
+                VStack {
+                    Spacer()
+                    Spacer()
+                    NavigationLink(
+                        destination: UsuarioView(),
+                        label: {
+                            Text("Siguiente")
+                                .foregroundColor(.black)
+                                .padding()
+                                .background(Color.white)
+                                .cornerRadius(10)
+                        }
+                    )
+                    .padding(.bottom, 50)
+                }
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            .onAppear {
+                withAnimation(
+                    Animation.linear(duration: 5)
+                        .repeatForever(autoreverses: false)
+                ) {
+                    offsetY = -500
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
