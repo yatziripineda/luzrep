@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-
-import SwiftUI
-
 struct MainMenu: View {
     
     //seleccionar table....
@@ -19,8 +16,9 @@ struct MainMenu: View {
     @Namespace var animation
     
     var body: some View {
+        
         ZStack{ //menu lateral
-            Color("blue").ignoresSafeArea()
+            Color("yellow").ignoresSafeArea()
             Side_Menu(selectedTable: $selectedTable)
             
             ZStack{

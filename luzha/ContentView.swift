@@ -54,13 +54,94 @@ class AppViewModel: ObservableObject{
 
 
 
+//struct ContentView: View {
+//    @EnvironmentObject var viewModel: AppViewModel
+//    @State var offsetY = 0.0
+//    let gradient = Gradient(colors: [
+//        Color(red: 40/255.0, green: 13/255.0, blue: 88/255.0),
+//        .black
+//    ])
+//
+//    var body: some View {
+//        NavigationStack {
+//            ZStack {
+//                RadialGradient(
+//                    gradient: gradient,
+//                    center: .center,
+//                    startRadius: 0,
+//                    endRadius: 360
+//                )
+//                .ignoresSafeArea()
+//
+//                ScrollView {
+//                    VStack(spacing: 0) {
+//                        //Image("fondomuestra2")
+//                            //.resizable()
+//                       // Image("fondomuestra2")
+//                           // .resizable()
+//                    }
+//                    .scaledToFill()
+//                    .frame(width: 800, height: 500)
+//                    .offset(y: offsetY)
+//                    .mask(
+//
+//                        VStack {
+//                            Spacer()
+//                            Text("SwiftBeta")
+//                                .font(.system(size: 65, weight: .bold, design:
+//                                        .monospaced))
+//                            Spacer()
+//                        }
+//                    )
+//                }
+//
+//                VStack {
+//                    Spacer()
+//                    Spacer()
+//                    NavigationLink(
+//                        destination: UsuarioView(),
+//                        label: {
+//                            Text("Siguiente")
+//                                .foregroundColor(.black)
+//                                .padding()
+//                                .background(Color.white)
+//                                .cornerRadius(10)
+//                        }
+//                    )
+//                    .padding(.bottom, 50)
+//                }
+//            }
+//            .onAppear {
+//                withAnimation(
+//                    Animation.linear(duration: 5)
+//                        .repeatForever(autoreverses: false)
+//                ) {
+//                    offsetY = -500
+//                }
+//        }
+//        }
+//    }
+//}
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+
+
+
+
+
 struct ContentView: View {
     @EnvironmentObject var viewModel: AppViewModel
     @State var offsetY = 0.0
     let gradient = Gradient(colors: [
-        Color(red: 40/255.0, green: 13/255.0, blue: 88/255.0),
-        .black
-    ])
+        Color(red: 255/255, green: 255/255, blue: 255/255),
+        Color.yellow
+        ])
+
+
     
     var body: some View {
         NavigationStack {
@@ -75,34 +156,33 @@ struct ContentView: View {
                 
                 ScrollView {
                     VStack(spacing: 0) {
-                        //Image("fondomuestra2")
-                            //.resizable()
-                       // Image("fondomuestra2")
-                           // .resizable()
+                        Image("degradado3")
+                        Image("degradado3")
                     }
                     .scaledToFill()
                     .frame(width: 800, height: 500)
                     .offset(y: offsetY)
                     .mask(
-                        
                         VStack {
-                            Spacer()
-                            Text("SwiftBeta")
-                                .font(.system(size: 65, weight: .bold, design:
-                                        .monospaced))
+                            Text("TLALLI")
+                                .font(.system(size: 100, weight: .bold, design: .monospaced))
+                                .shadow(color: .black, radius: 3, x: 0, y: 0)
+
                             Spacer()
                         }
                     )
                 }
                 
                 VStack {
+                    
                     Spacer()
+                    Image("solecito")
                     Spacer()
                     NavigationLink(
-                        destination: UsuarioView(),
+                        destination: SignInView(),
                         label: {
                             Text("Siguiente")
-                                .foregroundColor(.black)
+                                .foregroundColor(.blue)
                                 .padding()
                                 .background(Color.white)
                                 .cornerRadius(10)
@@ -118,7 +198,7 @@ struct ContentView: View {
                 ) {
                     offsetY = -500
                 }
-        }
+            }
         }
     }
 }
@@ -126,5 +206,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AppViewModel())
     }
 }
