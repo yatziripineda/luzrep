@@ -1,13 +1,13 @@
 //
-//  PostParto.swift
+//  EmtabView.swift
 //  luzha
 //
-////  Created by CEDAM05 on 11/05/23.
-////
+//  Created by CEDAM05 on 11/05/23.
+//
 //
 //import SwiftUI
 //
-//struct PostParto: View {
+//struct EmtabView: View {
 //    var body: some View {
 //        TabView
 //        {
@@ -16,30 +16,31 @@
 //            {
 //                Image(systemName: "person.fill")
 //                Text("Perfil")
-//            }
+//            }.tag(0)
 //            LactanciaView()
 //                .tabItem {
 //                    Image(systemName: "clipboard.fill")
 //                    Text("Metodos Anticonceptivos")
-//                }
+//                }.tag(1)
 //            ForoPView()
 //                .tabItem {
 //                    Image(systemName: "person.fill.questionmark")
 //                    Text("ILE")
-//                }
-////            ETSView()
-////                .tabItem {
-////                    Image(systemName: "magnifyingglass.circle.fill")
-////
-////                    Text("ETS")
-////                }
-//              
+//                }.tag(2)
+//            //            ETSView()
+//            //                .tabItem {
+//            //                    Image(systemName: "magnifyingglass.circle.fill")
+//            //
+//            //                    Text("ETS")
+//            //                }
+//            
 //        }
+//    
 //    }
 //}
 //
-//struct PostParto_Previews: PreviewProvider {
+//struct EmtabView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        PostParto()
+//        EmtabView()
 //    }
 //}

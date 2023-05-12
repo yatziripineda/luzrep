@@ -146,59 +146,65 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                RadialGradient(
-                    gradient: gradient,
-                    center: .center,
-                    startRadius: 0,
-                    endRadius: 360
-                )
-                .ignoresSafeArea()
+//                Color.blue
+//                RadialGradient(
+//                    gradient: gradient,
+//                    center: .center,
+//                    startRadius: 0,
+//                    endRadius: 360
+//                )
+//                .ignoresSafeArea()
                 
-                ScrollView {
-                    VStack(spacing: 0) {
-                        Image("degradado3")
-                        Image("degradado3")
-                    }
-                    .scaledToFill()
-                    .frame(width: 800, height: 500)
-                    .offset(y: offsetY)
-                    .mask(
-                        VStack {
-                            Text("TLALLI")
-                                .font(.system(size: 100, weight: .bold, design: .monospaced))
-                                .shadow(color: .black, radius: 3, x: 0, y: 0)
-
-                            Spacer()
-                        }
-                    )
-                }
+//                ScrollView {
+//                    VStack(spacing: 0) {
+//                        Image("degradado3")
+//                        Image("degradado3")
+//                    }
+//                    .scaledToFill()
+//                    .frame(width: 800, height: 500)
+//                    .offset(y: offsetY)
+//                    .mask(
+//                        VStack {
+//                            Text("TLALLI")
+//                                .font(.system(size: 100, weight: .bold, design: .monospaced))
+//                                .shadow(color: .black, radius: 3, x: 0, y: 0)
+//
+//                            Spacer()
+//                        }
+//                    )
+//                }
                 
-                VStack {
+//                VStack {
                     
-                    Spacer()
-                    Image("solecito")
+                    Image("tlallic")
+                    .resizable()
+                    .ignoresSafeArea()
+                VStack{
+                    
                     Spacer()
                     NavigationLink(
                         destination: SignInView(),
                         label: {
-                            Text("Siguiente")
-                                .foregroundColor(.blue)
-                                .padding()
-                                .background(Color.white)
-                                .cornerRadius(10)
+                            Text("Start")
+                                .foregroundColor(.black)
+                                .bold()
+                                .frame(width: 200, height: 50)
+                                .background(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: [Color.yellow, Color.orange]),
+                                        startPoint: .leading,
+                                        endPoint: .trailing
+                                    )
+                                )
+                                .cornerRadius(8)
                         }
                     )
+
+
                     .padding(.bottom, 50)
                 }
             }
-            .onAppear {
-                withAnimation(
-                    Animation.linear(duration: 5)
-                        .repeatForever(autoreverses: false)
-                ) {
-                    offsetY = -500
-                }
-            }
+            
         }
     }
 }

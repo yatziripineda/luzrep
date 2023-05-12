@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC7D3C6B2A0D9C5200C3961D /* Embarazo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D3C6A2A0D9C5200C3961D /* Embarazo.swift */; };
+		FC1C5D192A0DB37F008D42A4 /* BebeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5D182A0DB37F008D42A4 /* BebeView.swift */; };
+		FC1C5D272A0DB3D7008D42A4 /* ForoPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5D262A0DB3D7008D42A4 /* ForoPView.swift */; };
+		FC1C5D292A0DB3DD008D42A4 /* ForoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5D282A0DB3DD008D42A4 /* ForoView.swift */; };
+		FC1C5D2B2A0DB3E9008D42A4 /* LactanciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5D2A2A0DB3E9008D42A4 /* LactanciaView.swift */; };
+		FC1C5D332A0DB428008D42A4 /* PrepartoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5D322A0DB428008D42A4 /* PrepartoView.swift */; };
+		FC1C5D352A0DB520008D42A4 /* AsistenciaPsicologicaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C5D342A0DB520008D42A4 /* AsistenciaPsicologicaView.swift */; };
+		FC4754BE2A0DBCEA009EE0E9 /* EmtabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4754BD2A0DBCEA009EE0E9 /* EmtabView.swift */; };
+		FC4754C02A0DBE48009EE0E9 /* CUEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4754BF2A0DBE48009EE0E9 /* CUEST.swift */; };
 		FC7D3C6E2A0D9C7C00C3961D /* PostParto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D3C6D2A0D9C7C00C3961D /* PostParto.swift */; };
 		FC7D3C712A0D9CC700C3961D /* Configuraciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D3C702A0D9CC700C3961D /* Configuraciones.swift */; };
 		FCA8E8C02A0D46C20068471B /* luzhaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8E8BF2A0D46C20068471B /* luzhaApp.swift */; };
@@ -32,10 +39,32 @@
 		FCA8E8F52A0D56520068471B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8E8F42A0D56520068471B /* SignUpView.swift */; };
 		FCA8E8F82A0D57900068471B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8E8F72A0D57900068471B /* SignInView.swift */; };
 		FCA8E8FB2A0D62870068471B /* MitosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA8E8FA2A0D62870068471B /* MitosView.swift */; };
+		FCE8EBC72A0DE56900D108E8 /* Cuest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBC62A0DE56900D108E8 /* Cuest1.swift */; };
+		FCE8EBC92A0DE56E00D108E8 /* Cuest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBC82A0DE56E00D108E8 /* Cuest2.swift */; };
+		FCE8EBCB2A0DE57300D108E8 /* Cuest3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBCA2A0DE57300D108E8 /* Cuest3.swift */; };
+		FCE8EBCD2A0DE65A00D108E8 /* Cuest5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBCC2A0DE65A00D108E8 /* Cuest5.swift */; };
+		FCE8EBCF2A0DE66000D108E8 /* Cuest41.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBCE2A0DE66000D108E8 /* Cuest41.swift */; };
+		FCE8EBD52A0DF0B300D108E8 /* EditarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBD12A0DF0B300D108E8 /* EditarView.swift */; };
+		FCE8EBD62A0DF0B300D108E8 /* AgregarContactoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBD22A0DF0B300D108E8 /* AgregarContactoView.swift */; };
+		FCE8EBD72A0DF0B300D108E8 /* DetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBD32A0DF0B300D108E8 /* DetalleView.swift */; };
+		FCE8EBD82A0DF0B300D108E8 /* CeldaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBD42A0DF0B300D108E8 /* CeldaView.swift */; };
+		FCE8EBDB2A0DF0C900D108E8 /* Contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBDA2A0DF0C900D108E8 /* Contactos.swift */; };
+		FCE8EBEB2A0E011A00D108E8 /* DenunciaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBEA2A0E011A00D108E8 /* DenunciaView.swift */; };
+		FCE8EBED2A0E12BA00D108E8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE8EBEC2A0E12BA00D108E8 /* Launch Screen.storyboard */; };
+		FCE8EBEF2A0E330000D108E8 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBEE2A0E330000D108E8 /* DiaryView.swift */; };
+		FCE8EBF12A0E372800D108E8 /* PostpartumMentalHealthView-.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBF02A0E372800D108E8 /* PostpartumMentalHealthView-.swift */; };
+		FCE8EBF32A0E3B6700D108E8 /* AsociacionesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8EBF22A0E3B6700D108E8 /* AsociacionesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FC7D3C6A2A0D9C5200C3961D /* Embarazo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Embarazo.swift; sourceTree = "<group>"; };
+		FC1C5D182A0DB37F008D42A4 /* BebeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BebeView.swift; sourceTree = "<group>"; };
+		FC1C5D262A0DB3D7008D42A4 /* ForoPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForoPView.swift; path = ../../../../Downloads/LUZ1/LUZ1/ForoPView.swift; sourceTree = "<group>"; };
+		FC1C5D282A0DB3DD008D42A4 /* ForoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForoView.swift; sourceTree = "<group>"; };
+		FC1C5D2A2A0DB3E9008D42A4 /* LactanciaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LactanciaView.swift; sourceTree = "<group>"; };
+		FC1C5D322A0DB428008D42A4 /* PrepartoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepartoView.swift; sourceTree = "<group>"; };
+		FC1C5D342A0DB520008D42A4 /* AsistenciaPsicologicaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsistenciaPsicologicaView.swift; sourceTree = "<group>"; };
+		FC4754BD2A0DBCEA009EE0E9 /* EmtabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmtabView.swift; sourceTree = "<group>"; };
+		FC4754BF2A0DBE48009EE0E9 /* CUEST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUEST.swift; sourceTree = "<group>"; };
 		FC7D3C6D2A0D9C7C00C3961D /* PostParto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostParto.swift; sourceTree = "<group>"; };
 		FC7D3C702A0D9CC700C3961D /* Configuraciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuraciones.swift; sourceTree = "<group>"; };
 		FCA8E8BC2A0D46C20068471B /* luzha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luzha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +87,21 @@
 		FCA8E8F42A0D56520068471B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FCA8E8F72A0D57900068471B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FCA8E8FA2A0D62870068471B /* MitosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitosView.swift; sourceTree = "<group>"; };
+		FCE8EBC62A0DE56900D108E8 /* Cuest1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuest1.swift; sourceTree = "<group>"; };
+		FCE8EBC82A0DE56E00D108E8 /* Cuest2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuest2.swift; sourceTree = "<group>"; };
+		FCE8EBCA2A0DE57300D108E8 /* Cuest3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuest3.swift; sourceTree = "<group>"; };
+		FCE8EBCC2A0DE65A00D108E8 /* Cuest5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuest5.swift; sourceTree = "<group>"; };
+		FCE8EBCE2A0DE66000D108E8 /* Cuest41.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cuest41.swift; sourceTree = "<group>"; };
+		FCE8EBD12A0DF0B300D108E8 /* EditarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarView.swift; sourceTree = "<group>"; };
+		FCE8EBD22A0DF0B300D108E8 /* AgregarContactoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgregarContactoView.swift; sourceTree = "<group>"; };
+		FCE8EBD32A0DF0B300D108E8 /* DetalleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleView.swift; sourceTree = "<group>"; };
+		FCE8EBD42A0DF0B300D108E8 /* CeldaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaView.swift; sourceTree = "<group>"; };
+		FCE8EBDA2A0DF0C900D108E8 /* Contactos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contactos.swift; sourceTree = "<group>"; };
+		FCE8EBEA2A0E011A00D108E8 /* DenunciaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenunciaView.swift; sourceTree = "<group>"; };
+		FCE8EBEC2A0E12BA00D108E8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FCE8EBEE2A0E330000D108E8 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		FCE8EBF02A0E372800D108E8 /* PostpartumMentalHealthView-.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostpartumMentalHealthView-.swift"; sourceTree = "<group>"; };
+		FCE8EBF22A0E3B6700D108E8 /* AsociacionesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsociacionesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +118,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC1C5D172A0DB358008D42A4 /* juli */ = {
+			isa = PBXGroup;
+			children = (
+				FC1C5D322A0DB428008D42A4 /* PrepartoView.swift */,
+				FC1C5D262A0DB3D7008D42A4 /* ForoPView.swift */,
+				FC1C5D2A2A0DB3E9008D42A4 /* LactanciaView.swift */,
+				FC1C5D282A0DB3DD008D42A4 /* ForoView.swift */,
+				FC1C5D182A0DB37F008D42A4 /* BebeView.swift */,
+				FC1C5D342A0DB520008D42A4 /* AsistenciaPsicologicaView.swift */,
+				FC4754BF2A0DBE48009EE0E9 /* CUEST.swift */,
+				FCE8EBF22A0E3B6700D108E8 /* AsociacionesView.swift */,
+			);
+			path = juli;
+			sourceTree = "<group>";
+		};
 		FC7D3C692A0D9C4100C3961D /* Embarazo */ = {
 			isa = PBXGroup;
 			children = (
-				FC7D3C6A2A0D9C5200C3961D /* Embarazo.swift */,
+				FC4754BD2A0DBCEA009EE0E9 /* EmtabView.swift */,
+				FCE8EBEE2A0E330000D108E8 /* DiaryView.swift */,
 			);
 			path = Embarazo;
 			sourceTree = "<group>";
@@ -86,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				FC7D3C6D2A0D9C7C00C3961D /* PostParto.swift */,
+				FCE8EBEA2A0E011A00D108E8 /* DenunciaView.swift */,
 			);
 			path = postparto;
 			sourceTree = "<group>";
@@ -117,6 +178,8 @@
 		FCA8E8BE2A0D46C20068471B /* luzha */ = {
 			isa = PBXGroup;
 			children = (
+				FCE8EBC52A0DE4E600D108E8 /* Cuestionarios */,
+				FC1C5D172A0DB358008D42A4 /* juli */,
 				FC7D3C6F2A0D9CB600C3961D /* Configuraciones */,
 				FC7D3C6C2A0D9C6600C3961D /* postparto */,
 				FC7D3C692A0D9C4100C3961D /* Embarazo */,
@@ -126,12 +189,14 @@
 				FCA8E8D22A0D4A190068471B /* view main */,
 				FCA8E8BF2A0D46C20068471B /* luzhaApp.swift */,
 				FCA8E8E72A0D52B10068471B /* ContentView.swift */,
+				FCE8EBD02A0DF0B300D108E8 /* Views */,
 				FCA8E8DD2A0D4C300068471B /* GoogleService-Info.plist */,
 				FCA8E8C12A0D46C20068471B /* dataview.swift */,
 				FCA8E8C32A0D46C30068471B /* Assets.xcassets */,
 				FCA8E8C82A0D46C30068471B /* Persistence.swift */,
 				FCA8E8CA2A0D46C30068471B /* luzha.xcdatamodeld */,
 				FCA8E8C52A0D46C30068471B /* Preview Content */,
+				FCE8EBEC2A0E12BA00D108E8 /* Launch Screen.storyboard */,
 			);
 			path = luzha;
 			sourceTree = "<group>";
@@ -168,8 +233,8 @@
 		FCA8E8F62A0D56EE0068471B /* logeo */ = {
 			isa = PBXGroup;
 			children = (
+				FCE8EBD92A0DF0C900D108E8 /* Modelos */,
 				FCA8E8F42A0D56520068471B /* SignUpView.swift */,
-				FCA8E8F22A0D55BD0068471B /* UsuarioView.swift */,
 				FCA8E8F72A0D57900068471B /* SignInView.swift */,
 			);
 			path = logeo;
@@ -178,9 +243,42 @@
 		FCA8E8F92A0D62590068471B /* secciones sidemenu */ = {
 			isa = PBXGroup;
 			children = (
+				FCA8E8F22A0D55BD0068471B /* UsuarioView.swift */,
 				FCA8E8FA2A0D62870068471B /* MitosView.swift */,
 			);
 			path = "secciones sidemenu";
+			sourceTree = "<group>";
+		};
+		FCE8EBC52A0DE4E600D108E8 /* Cuestionarios */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8EBC62A0DE56900D108E8 /* Cuest1.swift */,
+				FCE8EBCC2A0DE65A00D108E8 /* Cuest5.swift */,
+				FCE8EBCE2A0DE66000D108E8 /* Cuest41.swift */,
+				FCE8EBC82A0DE56E00D108E8 /* Cuest2.swift */,
+				FCE8EBCA2A0DE57300D108E8 /* Cuest3.swift */,
+				FCE8EBF02A0E372800D108E8 /* PostpartumMentalHealthView-.swift */,
+			);
+			path = Cuestionarios;
+			sourceTree = "<group>";
+		};
+		FCE8EBD02A0DF0B300D108E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8EBD12A0DF0B300D108E8 /* EditarView.swift */,
+				FCE8EBD22A0DF0B300D108E8 /* AgregarContactoView.swift */,
+				FCE8EBD32A0DF0B300D108E8 /* DetalleView.swift */,
+				FCE8EBD42A0DF0B300D108E8 /* CeldaView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCE8EBD92A0DF0C900D108E8 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8EBDA2A0DF0C900D108E8 /* Contactos.swift */,
+			);
+			path = Modelos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +350,7 @@
 			files = (
 				FCA8E8C72A0D46C30068471B /* Preview Assets.xcassets in Resources */,
 				FCA8E8DE2A0D4C300068471B /* GoogleService-Info.plist in Resources */,
+				FCE8EBED2A0E12BA00D108E8 /* Launch Screen.storyboard in Resources */,
 				FCA8E8C42A0D46C30068471B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,25 +362,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1C5D2B2A0DB3E9008D42A4 /* LactanciaView.swift in Sources */,
 				FCA8E8EF2A0D53F20068471B /* TextMessageView.swift in Sources */,
 				FCA8E8FB2A0D62870068471B /* MitosView.swift in Sources */,
 				FCA8E8ED2A0D53CB0068471B /* ViewModel.swift in Sources */,
+				FCE8EBC72A0DE56900D108E8 /* Cuest1.swift in Sources */,
+				FCE8EBD62A0DF0B300D108E8 /* AgregarContactoView.swift in Sources */,
 				FCA8E8C92A0D46C30068471B /* Persistence.swift in Sources */,
+				FC1C5D272A0DB3D7008D42A4 /* ForoPView.swift in Sources */,
 				FC7D3C712A0D9CC700C3961D /* Configuraciones.swift in Sources */,
 				FCA8E8C22A0D46C20068471B /* dataview.swift in Sources */,
+				FCE8EBEF2A0E330000D108E8 /* DiaryView.swift in Sources */,
+				FCE8EBD72A0DF0B300D108E8 /* DetalleView.swift in Sources */,
+				FC4754C02A0DBE48009EE0E9 /* CUEST.swift in Sources */,
+				FCE8EBCD2A0DE65A00D108E8 /* Cuest5.swift in Sources */,
 				FCA8E8E82A0D52B10068471B /* ContentView.swift in Sources */,
 				FC7D3C6E2A0D9C7C00C3961D /* PostParto.swift in Sources */,
 				FCA8E8EB2A0D53B00068471B /* ChatIA.swift in Sources */,
+				FCE8EBC92A0DE56E00D108E8 /* Cuest2.swift in Sources */,
+				FC4754BE2A0DBCEA009EE0E9 /* EmtabView.swift in Sources */,
+				FCE8EBD82A0DF0B300D108E8 /* CeldaView.swift in Sources */,
 				FCA8E8DC2A0D4BDD0068471B /* MainMenu.swift in Sources */,
+				FCE8EBF32A0E3B6700D108E8 /* AsociacionesView.swift in Sources */,
+				FC1C5D192A0DB37F008D42A4 /* BebeView.swift in Sources */,
 				FCA8E8D42A0D4A750068471B /* home_Menu.swift in Sources */,
+				FCE8EBCF2A0DE66000D108E8 /* Cuest41.swift in Sources */,
 				FCA8E8D82A0D4AC10068471B /* Side_Menu.swift in Sources */,
-				FC7D3C6B2A0D9C5200C3961D /* Embarazo.swift in Sources */,
+				FCE8EBDB2A0DF0C900D108E8 /* Contactos.swift in Sources */,
 				FCA8E8F82A0D57900068471B /* SignInView.swift in Sources */,
 				FCA8E8F32A0D55BD0068471B /* UsuarioView.swift in Sources */,
+				FCE8EBCB2A0DE57300D108E8 /* Cuest3.swift in Sources */,
+				FC1C5D352A0DB520008D42A4 /* AsistenciaPsicologicaView.swift in Sources */,
 				FCA8E8F52A0D56520068471B /* SignUpView.swift in Sources */,
 				FCA8E8CC2A0D46C30068471B /* luzha.xcdatamodeld in Sources */,
 				FCA8E8C02A0D46C20068471B /* luzhaApp.swift in Sources */,
+				FCE8EBF12A0E372800D108E8 /* PostpartumMentalHealthView-.swift in Sources */,
+				FC1C5D292A0DB3DD008D42A4 /* ForoView.swift in Sources */,
+				FCE8EBEB2A0E011A00D108E8 /* DenunciaView.swift in Sources */,
+				FC1C5D332A0DB428008D42A4 /* PrepartoView.swift in Sources */,
 				FCA8E8F12A0D54060068471B /* ConversationView.swift in Sources */,
+				FCE8EBD52A0DF0B300D108E8 /* EditarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

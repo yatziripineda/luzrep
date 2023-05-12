@@ -7,14 +7,41 @@
 
 import SwiftUI
 
-struct Configuraciones: View {
+struct ConfiguracionView: View {
+    @State private var nombreHijo1: String = "Lucas"
+    @State private var nombreHijo2: String = "Sofía"
+    @State private var nombre: String = "Ana"
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section(header: Text("Información personal")) {
+                TextField("Nombre", text: $nombre)
+            }
+            
+            Section(header: Text("Hijos")) {
+                TextField("Nombre del primer hijo", text: $nombreHijo1)
+                TextField("Nombre del segundo hijo", text: $nombreHijo2)
+            }
+            
+            Section {
+                Button(action: {
+                    // Aquí se podrían guardar los datos modificados en una base de datos, por ejemplo
+                }) {
+                    Text("Guardar cambios")
+                }
+            }
+        }
+        .navigationBarTitle(Text("Configuración"))
     }
 }
 
-struct Configuraciones_Previews: PreviewProvider {
+struct ConfiguracionView_Previews: PreviewProvider {
     static var previews: some View {
-        Configuraciones()
+        ConfiguracionView()
     }
 }
+
+
+
+
+

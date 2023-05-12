@@ -1,13 +1,14 @@
 //
-//  Embarazo.swift
-//  luzha
+//  Postparto1.swift
+//  LUZ1
 //
-//  Created by CEDAM05 on 11/05/23.
+//  Created by CEDAM04 on 11/05/23.
 //
 
 import SwiftUI
 
-struct Embarazo: View {
+struct Embarazo1: View
+{
     var body: some View {
         TabView
         {
@@ -38,8 +39,8 @@ struct Embarazo: View {
     }
 }
 
-struct Embarazo_Previews: PreviewProvider {
+struct Embarazo1_Previews: PreviewProvider {
     static var previews: some View {
-        Embarazo()
+        Embarazo1()
     }
 }

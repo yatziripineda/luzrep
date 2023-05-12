@@ -1,13 +1,14 @@
 //
-//  Embarazo.swift
-//  luzha
+//  Postparto1.swift
+//  LUZ1
 //
-//  Created by CEDAM05 on 11/05/23.
+//  Created by CEDAM04 on 11/05/23.
 //
 
 import SwiftUI
 
-struct Embarazo: View {
+struct Postparto1: View
+{
     var body: some View {
         TabView
         {
@@ -30,7 +31,7 @@ struct Embarazo: View {
 //            ETSView()
 //                .tabItem {
 //                    Image(systemName: "magnifyingglass.circle.fill")
-//
+//                    
 //                    Text("ETS")
 //                }
               
@@ -38,8 +39,8 @@ struct Embarazo: View {
     }
 }
 
-struct Embarazo_Previews: PreviewProvider {
+struct Postparto1_Previews: PreviewProvider {
     static var previews: some View {
-        Embarazo()
+        Postparto1()
     }
 }

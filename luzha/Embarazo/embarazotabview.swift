@@ -1,13 +1,11 @@
 //
-//  Embarazo.swift
+//  embarazotabview.swift
 //  luzha
 //
 //  Created by CEDAM05 on 11/05/23.
 //
-
 import SwiftUI
-
-struct Embarazo: View {
+struct EmbarazoView1: View {
     var body: some View {
         TabView
         {
@@ -36,10 +34,3 @@ struct Embarazo: View {
               
         }
     }
-}
-
-struct Embarazo_Previews: PreviewProvider {
-    static var previews: some View {
-        Embarazo()
-    }
-}
